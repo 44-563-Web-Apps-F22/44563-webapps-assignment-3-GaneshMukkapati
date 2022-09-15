@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <style>
+            table,th,td{
+                border:1px solid green
+            }
+        </style>
         I am Ganesh Raghunadh persuing my masters in Northwest Missouri State University.
         I did my Undergraduation in Electronics and Communication in Kalasalingam Academy of Research and Education at Madurai.
         <h4>
@@ -19,8 +24,71 @@
                 height=”200” width=“200”
                 alt=“a favourite movie hero image” >
 
+                <hr><h2> <center>Table for cities</center> </h2>
+                <table style="width:100%">
+                    <tr>
+                      <th>City</th> 
+                      <th>place</th>
+                      <th>time</th> 
+                       
+                    </tr>
+                    <tr>
+                        <td>Delhi</td> 
+                        <td>India Gate</td>
+                        <td>1 hour</td> 
+                         
+                    </tr>
+                    <tr>
+                        <td>Banglore</td> 
+                        <td>Mysore Palace</td>
+                        <td>2 hours</td> 
+                         
+                    </tr>
+                    <tr>
+                        <td>Guntur</td> 
+                        <td>Manasasarovar</td>
+                        <td>5 hour</td> 
+                         
+                    </tr>
+                    <tr>
+                        <td>vijayawada</td> 
+                        <td>Durgha Temple</td>
+                        <td>2 hour</td> 
+                         
+                      </tr>
+                      <p>
+                        Delhi is the capital of India.
+                        Bangalore is the IT hub of India.
+                        Guntur is famous for Mirchi.
+                        Vijayawada is famous for its culture and the krishna river.</p>
+                
+                      
+                
+                </table>
+                <hr> <h5>Code display</h5>
+                <pre>
+                    $.fn.shuffleChildren = function() {
+                        $.each(this.get(), function(index, el) {
+                            var $el = $(el);
+                            var $find = $el.children();
+                    
+                            $find.sort(function() {
+                                return 0.5 - Math.random();
+                            });
+                    
+                            $el.empty();
+                            $find.appendTo($el);
+                        });
+                    };
+                    Usage
+                    $(".parent-element").shuffleChildren();
+                    
+                </pre>
+                <q>Shuffle children</q>
+                <a href="https://css-tricks.com/snippets/jquery/shuffle-children/" >   Link for the code </a>
 
     </body>
+
 
 
 
